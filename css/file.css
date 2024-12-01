@@ -1,0 +1,79 @@
+
+:root{
+    --primary-color:red;
+    --secondary-color:green;
+    --tertiary-color:gray;
+    --accent-color:blue;
+}
+
+
+/*start of header*/
+.header{
+    color: var(secondary-color);
+    overflow-y: auto;
+    width: 300px;
+    position: fixed;
+    padding: 0 15px;
+ }
+.header .profile-img img{
+    display: block;
+    width: 120px;
+    margin: 15px auto;
+    border: 5px solid;
+       
+}
+.header .logo h1{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    color:rgb(250, 249, 248);
+}
+.header .social-link{
+    margin: 0 0 20px 0;
+}
+.navmenu{
+    padding:0;
+    z-index: 9997;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.navmenu ul{
+    list-style: none;
+    padding:0 0 20px 0;
+}
+.header .social-links a{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--default-color), transparent 90%);
+    columns: var(--default-color);
+    margin: 0 2px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+.header .social-links a:hover{
+    color: var(--contrast-color);
+    background: var(--accent-color);
+}
+/* end of Header*/
+
+/*start of Navigation Menu */
+.navmenu a .navicon,
+.navmenu a:focus .navicon{
+    font-size: 20px;
+    margin-right: 10px;
+    /*navmenu active */
+}
+
+
+.navmenu .navlink .active{
+    color:var(--tertiary-color);
+}
+.navmenu .nav-link .active{
+    color:var(--accent-color);
+}
+/*navmenu hover */
+/*start of hover*/
